@@ -25,13 +25,15 @@ html {
 }
 /* Copy & Lists */
 
-p {
+p,
+Paragraph {
     line-height: $leading;
     margin-top: $leading;
     margin-bottom: 0;
 }
 ul,
-ol {
+ol,
+List {
     margin-top: $leading;
     margin-bottom: $leading;
     li {
@@ -55,60 +57,71 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+Title {
     /* Change heading typefaces here */
     font-family: sans-serif;
     margin-top: $leading;
     margin-bottom: 0;
     line-height: $leading;
 }
-h1 {
+h1,
+.Title--alpha {
     font-size: 3 * $scale * 1rem;
     line-height: 3 * $leading;
     margin-top: 2 * $leading;
 }
-h2 {
+h2,
+.Title--beta {
     font-size: 2 * $scale * 1rem;
     line-height: 2 * $leading;
     margin-top: 2 * $leading;
 }
-h3 {
+h3,
+.Title--gamma {
     font-size: 1 * $scale * 1rem;
 }
-h4 {
+h4,
+.Title--delta {
     font-size: $scale / 2 * 1rem;
 }
-h5 {
+h5,
+.Title--epsilon {
     font-size: $scale / 3 * 1rem;
 }
-h6 {
+h6,
+.Title--zeta {
     font-size: $scale / 4 * 1rem;
 }
 /* Tables */
 
-table {
+table,
+.Table {
     margin-top: $leading;
     border-spacing: 0px;
     border-collapse: collapse;
 }
 td,
-th {
+th,
+.Table__definition,
+.Table__header {
     padding: 0;
     line-height: $baseLineHeight * $baseFontSize - 0px;
 }
 /* Code blocks */
 
-code {
+code,
+.CodeBlock {
     // Forces text to constrain to the line-height. Not ideal, but works.
     vertical-align: bottom;
 }
 /* Leading paragraph text */
 
-.lead {
+.Paragraph--lead {
     font-size: $scale * 1rem;
 }
 /* Hug a the block above you */
 
-.hug {
+.Paragraph--hug {
     margin-top: 0;
 }
